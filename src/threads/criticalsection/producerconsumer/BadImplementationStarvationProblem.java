@@ -59,7 +59,7 @@ public class BadImplementationStarvationProblem {
     }
 
     static class Inventory {
-        Semaphore semaphore = new Semaphore(1);
+        private final Semaphore semaphore = new Semaphore(1);
 
         private int count = 0;
 
